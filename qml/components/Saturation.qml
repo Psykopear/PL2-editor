@@ -1,3 +1,4 @@
 Module {
-  name: "Saturation"
+  title: "Saturation"
+  backgroundColor: "#ECAEA4"
 }

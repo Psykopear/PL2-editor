@@ -6,8 +6,10 @@ import "components"
 ApplicationWindow {
   id: root
   visible: true
-  minimumWidth: 800
-  minimumHeight: 600
+  minimumWidth: 1120
+  minimumHeight: 610
+  width: 1120
+  height: 620
   color: "#262328"
 
   Flow {
@@ -15,19 +17,19 @@ ApplicationWindow {
     anchors.margins: 4
     spacing: 10
 
-    /* Midi {} */
-    /* Pitch {} */
+    Midi {}
+    Pitch {}
     Adsr {}
-    /* Osc1 {} */
-    /* Osc2 {} */
-    /* BassDrum {} */
-    /* NoiseBell {} */
-    /* SuperMod {} */
-    /* LFO {} */
-    /* Mixer {} */
-    /* Filter {} */
-    /* Crusher {} */
+    Osc1 {}
+    Osc2 {}
+    BassDrum {}
+    NoiseBell {}
+    SuperMod {}
+    LFO {}
+    Mixer {}
+    Filter {}
+    Crusher {}
     AnalogFilter {}
-    /* Saturation {} */
+    Saturation {}
   }
 }

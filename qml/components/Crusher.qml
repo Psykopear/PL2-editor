@@ -1,3 +1,4 @@
 Module {
-  name: "Crusher"
+  title: "Crusher"
+  backgroundColor: "#97BAAE"
 }

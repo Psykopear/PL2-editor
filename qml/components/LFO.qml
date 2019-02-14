@@ -1,3 +1,4 @@
 Module {
-  name: "LFO"
+  title: "LFO"
+  backgroundColor: "#A3CEC9"
 }

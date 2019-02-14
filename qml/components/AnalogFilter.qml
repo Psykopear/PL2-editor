@@ -3,7 +3,7 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.11
 
 Module {
-  backgroundColor: "#FFCC00"
+  backgroundColor: "#8B9AAB"
   title: "Analog Filter"
   ColumnLayout {
     RowLayout {

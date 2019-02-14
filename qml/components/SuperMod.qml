@@ -1,3 +1,4 @@
 Module {
-  name: "Super Mod"
+  title: "Super Mod"
+  backgroundColor: "#E40614"
 }

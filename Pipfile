@@ -9,6 +9,8 @@ verify_ssl = true
 mido = "*"
 python-rtmidi = "*"
 pyside2 = "*"
+python-qt-live-coding = "*"
+pyqt5 = "*"
 
 [requires]
 python_version = "3.7"

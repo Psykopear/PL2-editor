@@ -24,6 +24,7 @@ Module {
         inputMode: Dial.Vertical
         Layout.preferredWidth: 60
         Layout.preferredHeight: 60
+        palette.highlight: "#000000"
         from: 0
         to: 127
         stepSize: 1

@@ -1,3 +1,4 @@
 Module {
-  name: "Osc2"
+  title: "Osc2"
+  backgroundColor: "#E9DDB6"
 }

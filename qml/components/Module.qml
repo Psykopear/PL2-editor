@@ -14,10 +14,58 @@ Pane {
     color: root.backgroundColor
     opacity: 1
     anchors.fill: parent
+    Rectangle {
+      anchors.top: parent.top
+      anchors.left: parent.left
+      anchors.margins: 3
+      width: 10
+      height: 10
+      radius: 10
+      border.color: '#525252'
+      border.width: 3
+    }
+    Rectangle {
+      anchors.top: parent.top
+      anchors.right: parent.right
+      anchors.margins: 3
+      width: 10
+      height: 10
+      radius: 10
+      border.color: '#525252'
+      border.width: 3
+    }
+    Rectangle {
+      anchors.bottom: parent.bottom
+      anchors.left: parent.left
+      anchors.margins: 3
+      width: 10
+      height: 10
+      radius: 10
+      border.color: '#525252'
+      border.width: 3
+    }
+    Rectangle {
+      anchors.bottom: parent.bottom
+      anchors.right: parent.right
+      anchors.margins: 3
+      width: 10
+      height: 10
+      radius: 10
+      border.color: '#525252'
+      border.width: 3
+    }
   }
   ColumnLayout {
-    Label {
-      text: root.title
+    RowLayout {
+      Item {
+        Layout.fillWidth: true
+      }
+      Label {
+        text: root.title
+      }
+      Item {
+        Layout.fillWidth: true
+      }
     }
     Loader {
       sourceComponent: root.content

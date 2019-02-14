@@ -1,3 +1,4 @@
 Module {
-  name: "NoiseBell"
+  title: "Noise Bell"
+  backgroundColor: "#E2E0E5"
 }

@@ -4,7 +4,7 @@ from PySide2.QtQml import QQmlApplicationEngine
 
 
 if __name__ == "__main__":
-    app = QGuiApplication([*sys.argv, '--style=Docler'])
+    app = QGuiApplication([*sys.argv, '--style=qml/Docler'])
     engine = QQmlApplicationEngine()
     engine.load('qml/main.qml')
     if not engine.rootObjects():

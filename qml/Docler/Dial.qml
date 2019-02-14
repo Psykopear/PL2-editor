@@ -14,7 +14,7 @@ T.Dial {
     background: DialImpl {
         implicitWidth: 18
         implicitHeight: 18
-        color: control.visualFocus ? control.palette.highlight : control.palette.dark
+        color: "#000000" //control.visualFocus ? control.palette.highlight : control.palette.dark
         progress: control.position
         opacity: control.enabled ? 1 : 0.3
     }
@@ -24,8 +24,8 @@ T.Dial {
         y: background.y + background.height / 2 - handle.height / 2
         width: 14
         height: 10
-        defaultColor: "#353637"
-        color: control.visualFocus ? control.palette.highlight : control.palette.dark
+        defaultColor: "#000000"
+        color: "#000000" //control.visualFocus ? control.palette.highlight : control.palette.dark
         source: "qrc:/qt-project.org/imports/QtQuick/Controls.2/images/dial-indicator.png"
         antialiasing: true
         opacity: control.enabled ? 1 : 0.3
