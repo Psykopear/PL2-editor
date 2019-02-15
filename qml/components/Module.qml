@@ -55,20 +55,16 @@ Pane {
       border.width: 3
     }
   }
+
   ColumnLayout {
-    RowLayout {
-      Item {
-        Layout.fillWidth: true
-      }
-      Label {
-        text: root.title
-      }
-      Item {
-        Layout.fillWidth: true
-      }
+    width: parent.width
+    Label {
+      text: root.title
+      Layout.alignment: Qt.AlignHCenter
     }
     Loader {
       sourceComponent: root.content
+      Layout.fillWidth: true
     }
   }
 }

@@ -7,46 +7,27 @@ Module {
   title: "πλ² MIDI"
 
   ColumnLayout {
+    width: parent.width
     RowLayout {
       Label { text: "DUO"}
-      Item {
-        Layout.fillWidth: true
-      }
+      HSpacer {}
       Label { text: "DETUNE" }
     }
     RowLayout {
-      Item {Layout.fillWidth: true}
+      HSpacer {}
       Dial {
         Layout.preferredWidth: 60
         Layout.preferredHeight: 60
         inputMode: Dial.Vertical
       }
-      Item {
-        Layout.fillWidth: true
-      }
+      HSpacer {}
     }
     RowLayout {
       Label { text: "MONO"}
-      Item {
-        Layout.fillWidth: true
-      }
+      HSpacer {}
       Label { text: "OCTAVE" }
     }
-    RowLayout {
-      Item {
-        Layout.fillWidth: true
-      }
-      ColumnLayout {
-        Label { text: "Bass drum" }
-        Dial {
-          Layout.preferredWidth: 60
-          Layout.preferredHeight: 60
-          inputMode: Dial.Vertical
-        }
-      }
-    }
-    Item {
-      Layout.fillWidth: true
-    }
+    LabelledDial { label: "BD" }
+    CheckBox { text: "NOTE PRI." }
   }
 }

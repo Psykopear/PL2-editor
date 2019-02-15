@@ -8,28 +8,17 @@ Module {
   title: "ADSR"
 
   ColumnLayout {
-
-    RowLayout {
-      Text {
-        Layout.alignment: Text.AlignHCenter
-        text: "Attack"
-        color: "white"
-      }
-
-      Item {
-        Layout.fillWidth: true
-      }
-
-      Dial {
-        inputMode: Dial.Vertical
-        Layout.preferredWidth: 60
-        Layout.preferredHeight: 60
-        palette.highlight: "#000000"
-        from: 0
-        to: 127
-        stepSize: 1
-        snapMode: "SnapAlways"
-      }
+    LabelledDial {
+      label: "Attack"
+    }
+    LabelledDial {
+      label: "Delay"
+    }
+    LabelledDial {
+      label: "Sustain"
+    }
+    LabelledDial {
+      label: "Release"
     }
   }
 }
