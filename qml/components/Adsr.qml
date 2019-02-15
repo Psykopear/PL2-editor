@@ -10,15 +10,23 @@ Module {
   ColumnLayout {
     LabelledDial {
       label: "Attack"
+      midiMessage: 17
+      // midiMessage: 73
     }
     LabelledDial {
-      label: "Delay"
+      label: "Decay"
+      midiMessage: 19
+      // midiMessage: 91
     }
     LabelledDial {
       label: "Sustain"
+      midiMessage: 21
+      // midiMessage: 93
     }
     LabelledDial {
       label: "Release"
+      midiMessage: 16
+      // midiMessage: 72
     }
     CheckBox { text: "KEY ON/OFF" }
   }

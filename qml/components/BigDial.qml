@@ -6,6 +6,7 @@ ColumnLayout {
   id: root
   property string label;
   property color labelColor: 'black';
+  property int midiMessage;
   property int stepSize: 1;
   
   Dial {
@@ -18,6 +19,9 @@ ColumnLayout {
     stepSize: root.stepSize
     snapMode: "SnapAlways"
     palette.highlight: "#000000"
+    onMoved: {
+      midi.output(`${midiMessage} ${value}`)
+    }
   }
 
   Label {

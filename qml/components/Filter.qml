@@ -10,9 +10,11 @@ Module {
     width: parent.width
     LabelledDial {
       label: "CUTOFF"
+      midiMessage: 18
     }
     LabelledDial {
       label: "RES"
+      midiMessage: 15
     }
   }
 }

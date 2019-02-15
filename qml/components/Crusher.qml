@@ -8,5 +8,6 @@ Module {
 
   BigDial {
     label: "DC OFFSET"
+    midiMessage: 22
   }
 }

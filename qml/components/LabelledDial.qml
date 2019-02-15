@@ -7,6 +7,7 @@ RowLayout {
   property string label;
   property color labelColor: 'black';
   property int stepSize: 1;
+  property int midiMessage;
 
   Text {
     text: root.label
@@ -26,5 +27,8 @@ RowLayout {
     to: 127
     stepSize: root.stepSize
     snapMode: "SnapAlways"
+    onMoved: {
+      midi.output(`${midiMessage} ${value}`)
+    }
   }
 }

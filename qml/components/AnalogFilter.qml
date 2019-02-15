@@ -7,5 +7,7 @@ Module {
   title: "Analog Filter"
   BigDial {
     label: "Cutoff"
+    midiMessage: 14
+    // midiMessage: 70
   }
 }

@@ -19,6 +19,8 @@ Module {
         Layout.preferredWidth: 60
         Layout.preferredHeight: 60
         inputMode: Dial.Vertical
+        stepSize: 1/3
+        snapMode: "SnapAlways"
       }
       HSpacer {}
     }
