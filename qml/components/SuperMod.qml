@@ -6,5 +6,20 @@ Module {
   title: "Super Mod"
   backgroundColor: "#E40614"
 
-  BigDial {}
+  ColumnLayout {
+    BigDial {}
+    RowLayout {
+      CheckBox { text: "  PWMS" }
+      CheckBox { text: "" }
+    }
+    RowLayout {
+      CheckBox { text: "RES" }
+      CheckBox { text: "CUT" }
+    }
+    RowLayout {
+      CheckBox { text: "DCU" }
+      CheckBox { text: "VOL" }
+    }
+      CheckBox { text: "REL" }
+  }
 }

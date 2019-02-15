@@ -3,7 +3,7 @@ import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.11
 
 Module {
-  backgroundColor: "#9BBAC5"
+  backgroundColor: "#A49DBE"
   title: "πλ² MIDI"
 
   ColumnLayout {

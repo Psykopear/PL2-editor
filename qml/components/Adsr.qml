@@ -4,7 +4,7 @@ import QtQuick.Layouts 1.11
 
 
 Module {
-  backgroundColor: "#9BBAC5"
+  backgroundColor: "#B2D6E3"
   title: "ADSR"
 
   ColumnLayout {
@@ -20,5 +20,6 @@ Module {
     LabelledDial {
       label: "Release"
     }
+    CheckBox { text: "KEY ON/OFF" }
   }
 }

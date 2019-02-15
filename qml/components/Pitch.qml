@@ -26,5 +26,6 @@ Module {
         inputMode: Dial.Vertical
       }
     }
+    CheckBox { text: "ON/OFF" }
   }
 }

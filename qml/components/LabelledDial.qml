@@ -19,8 +19,8 @@ RowLayout {
   
   Dial {
     inputMode: Dial.Vertical
-    Layout.preferredWidth: 60
-    Layout.preferredHeight: 60
+    Layout.preferredWidth: 40
+    Layout.preferredHeight: 40
     palette.highlight: "#000000"
     from: 0
     to: 127
