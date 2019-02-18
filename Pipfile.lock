@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "022a3b5272bb5faafb7c8586820faec92fca1217bfc72e03519476d4306c012e"
+            "sha256": "95f9ce57445f869f4323c4fa2a0c65c80c18157330a5fadcd11c88728e14123c"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -26,10 +26,10 @@
         },
         "pyqt5": {
             "hashes": [
-                "sha256:13140cfe0287decebcec72f933247291e366e0de52bc60a9d52926c24792f872",
-                "sha256:281cd0a4548fc3f4c594e0e34dc00953e50951d9ef5c9e9c8f79ef14412e30ed",
-                "sha256:2d8f4f9e712ab186c19ff52330fd5f80c21bf401fc7c8bcbd314b555a717b7b0",
-                "sha256:fd5946795b39922f971cf92dec799aadc7544b7fa993a79b9f6059f13d817e6e"
+                "sha256:1402f1613698ca64e3cec0ee27a60b5454e782c16fbd1bdee4a270a058947939",
+                "sha256:8872c78f204bf8b660164d6dfae87e1be5a9dbc3e20fd2823bd4e851b3647eba",
+                "sha256:912ead29f8ed86be178faeb2be83793fb633c11059ae54c3bd8e81c1e224e339",
+                "sha256:acbefac6c780f04709441aa7d8a147c0801f01f8db93f8f000e4a4391db27345"
             ],
             "index": "pypi",
             "version": "==5.12"
@@ -119,5 +119,37 @@
             "version": "==1.12.0"
         }
     },
-    "develop": {}
+    "develop": {
+        "altgraph": {
+            "hashes": [
+                "sha256:d6814989f242b2b43025cba7161fc1b8fb487a62cd49c49245d6fd01c18ac997",
+                "sha256:ddf5320017147ba7b810198e0b6619bd7b5563aa034da388cea8546b877f9b0c"
+            ],
+            "version": "==0.16.1"
+        },
+        "future": {
+            "hashes": [
+                "sha256:67045236dcfd6816dc439556d009594abf643e5eb48992e36beac09c2ca659b8"
+            ],
+            "version": "==0.17.1"
+        },
+        "macholib": {
+            "hashes": [
+                "sha256:ac02d29898cf66f27510d8f39e9112ae00590adb4a48ec57b25028d6962b1ae1",
+                "sha256:c4180ffc6f909bf8db6cd81cff4b6f601d575568f4d5dee148c830e9851eb9db"
+            ],
+            "version": "==1.11"
+        },
+        "pefile": {
+            "hashes": [
+                "sha256:4c5b7e2de0c8cb6c504592167acf83115cbbde01fe4a507c16a1422850e86cd6"
+            ],
+            "version": "==2018.8.8"
+        },
+        "pyinstaller": {
+            "editable": true,
+            "git": "https://github.com/pyinstaller/pyinstaller.git",
+            "ref": "42ab9dbb424a9c23f02874a6b523797efdb91663"
+        }
+    }
 }

@@ -7,25 +7,11 @@ Module {
   title: "Pitch"
 
   ColumnLayout {
-    Dial {
-      Layout.preferredWidth: 60
-      Layout.preferredHeight: 60
-      Layout.alignment: Qt.AlignHCenter
-      inputMode: Dial.Vertical
-    }
-    Label {
-      text: "PORTAMENTO"
+    BigDial {
+      label: "PORTAMENTO"
       Layout.alignment: Qt.AlignHCenter
     }
-    RowLayout {
-      Layout.alignment: Qt.AlignHCenter
-      Label { text: "TUNE" }
-      Dial {
-        Layout.preferredWidth: 60
-        Layout.preferredHeight: 60
-        inputMode: Dial.Vertical
-      }
-    }
+    LabelledDial { label: "TUNE" }
     CheckBox { text: "ON/OFF" }
   }
 }

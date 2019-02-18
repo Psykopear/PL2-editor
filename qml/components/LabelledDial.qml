@@ -22,13 +22,14 @@ RowLayout {
     inputMode: Dial.Vertical
     Layout.preferredWidth: 40
     Layout.preferredHeight: 40
+    enabled: root.midiMessage !== 0
     palette.highlight: "#000000"
     from: 0
     to: 127
     stepSize: root.stepSize
     snapMode: "SnapAlways"
     onMoved: {
-      midi.output(`${midiMessage} ${value}`)
+      midi.output(midiMessage, value)
     }
   }
 }

@@ -12,6 +12,7 @@ ColumnLayout {
   Dial {
     Layout.alignment: Qt.AlignHCenter
     inputMode: Dial.Vertical
+    enabled: root.midiMessage !== 0
     Layout.preferredWidth: 80
     Layout.preferredHeight: 80
     from: 0
@@ -20,7 +21,7 @@ ColumnLayout {
     snapMode: "SnapAlways"
     palette.highlight: "#000000"
     onMoved: {
-      midi.output(`${midiMessage} ${value}`)
+      midi.output(midiMessage, value)
     }
   }
 
