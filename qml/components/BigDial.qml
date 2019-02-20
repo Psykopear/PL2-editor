@@ -12,7 +12,6 @@ ColumnLayout {
   Dial {
     Layout.alignment: Qt.AlignHCenter
     inputMode: Dial.Vertical
-    enabled: root.midiMessage !== 0
     Layout.preferredWidth: 80
     Layout.preferredHeight: 80
     from: 0
@@ -20,9 +19,7 @@ ColumnLayout {
     stepSize: root.stepSize
     snapMode: "SnapAlways"
     palette.highlight: "#000000"
-    onMoved: {
-      midi.output(midiMessage, value)
-    }
+    midiMessage: root.midiMessage
   }
 
   Label {

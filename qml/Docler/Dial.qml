@@ -5,6 +5,8 @@ import QtQuick.Templates 2.12 as T
 
 T.Dial {
   id: control
+  property int midiMessage;
+  enabled: control.midiMessage !== 0
 
   implicitWidth: Math.max(
     implicitBackgroundWidth + leftInset + rightInset,
@@ -24,4 +26,8 @@ T.Dial {
   }
 
   handle: null
+
+  onMoved: {
+    midi.output(control.midiMessage, control.value)
+  }
 }

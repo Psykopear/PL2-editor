@@ -8,5 +8,6 @@ Module {
 
   BigDial {
     label: "Volume"
+    midiMessage: 7
   }
 }

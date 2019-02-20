@@ -9,6 +9,7 @@ Module {
   ColumnLayout {
     BigDial {
       label: "PORTAMENTO"
+      midiMessage: 5
       Layout.alignment: Qt.AlignHCenter
     }
     LabelledDial { label: "TUNE" }

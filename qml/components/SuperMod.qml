@@ -7,7 +7,9 @@ Module {
   backgroundColor: "#E40614"
 
   ColumnLayout {
-    BigDial {}
+    BigDial {
+      midiMessage: 1
+    }
     RowLayout {
       CheckBox { text: "  PWMS" }
       CheckBox { text: "" }
