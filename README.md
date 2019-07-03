@@ -2,7 +2,7 @@
 
 This is an editor for the Ploytec PL2 synthesizer.
 
-I used the design shown in their page, that I always liked but never saw implemented.
+I plan to implement the design shown [in their page](https://www.ploytec.com/pl2/), that I always liked but never saw implemented.
 
 This is what the app looks right now:
 
