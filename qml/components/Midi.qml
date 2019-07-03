@@ -30,6 +30,6 @@ Module {
       Label { text: "OCTAVE" }
     }
     LabelledDial { label: "BD" }
-    CheckBox { text: "NOTE PRI." }
+    Switch { text: "NOTE PRI." }
   }
 }

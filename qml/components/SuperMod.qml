@@ -11,17 +11,17 @@ Module {
       midiMessage: 1
     }
     RowLayout {
-      CheckBox { text: "  PWMS" }
-      CheckBox { text: "" }
+      Switch { text: "  PWMS" }
+      Switch { text: "" }
     }
     RowLayout {
-      CheckBox { text: "RES" }
-      CheckBox { text: "CUT" }
+      Switch { text: "RES" }
+      Switch { text: "CUT" }
     }
     RowLayout {
-      CheckBox { text: "DCU" }
-      CheckBox { text: "VOL" }
+      Switch { text: "DCU" }
+      Switch { text: "VOL" }
     }
-      CheckBox { text: "REL" }
+      Switch { text: "REL" }
   }
 }

@@ -13,6 +13,6 @@ Module {
       Layout.alignment: Qt.AlignHCenter
     }
     LabelledDial { label: "TUNE" }
-    CheckBox { text: "ON/OFF" }
+    Switch { text: "ON/OFF" }
   }
 }

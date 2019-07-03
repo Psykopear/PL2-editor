@@ -28,6 +28,6 @@ Module {
       midiMessage: 16
       // midiMessage: 72
     }
-    CheckBox { text: "KEY ON/OFF" }
+    Switch { text: "KEY ON/OFF" }
   }
 }

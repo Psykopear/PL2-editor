@@ -16,7 +16,7 @@ Module {
     LabelledDial {
       label: "Release"
     }
-    CheckBox { text: "SOUND A/B" }
+    Switch { text: "SOUND A/B" }
   }
 }
 

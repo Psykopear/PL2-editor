@@ -19,6 +19,6 @@ Module {
     LabelledDial {
       label: "VOL"
     }
-    CheckBox { text: "MODE 0/1" }
+    Switch { text: "MODE 0/1" }
   }
 }

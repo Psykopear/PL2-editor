@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.Layouts 1.11
 
-import "components"
+import "containers"
 
 ApplicationWindow {
   id: root
@@ -13,39 +13,30 @@ ApplicationWindow {
   height: minimumHeight
   color: "#262328"
 
-  footer: Pane {
+  footer: Footer {
     width: parent.width
     height: 60
-    RowLayout {
-      Button {
-        text: "Start midi"
-        onClicked: midi.start_playback()
-      }
-      Button {
-        text: "Stop midi"
-        onClicked: midi.stop_playback()
-      }
+    onConfigClicked: stack.push(config)
+    onBackClicked: stack.pop()
+  }
+
+  StackView {
+    id: stack
+    initialItem: params
+    anchors.fill: parent
+  }
+
+  Params {
+    id: params
+    anchors.fill: parent
+    anchors.margins: 4
+  }
+
+  Component {
+    id: config
+    Pane {
+      Label { text: "CIAO" }
     }
   }
 
-  Flow {
-    anchors.fill: parent
-    anchors.margins: 4
-    spacing: 10
-
-    Midi {}
-    Pitch {}
-    Adsr {}
-    Osc1 {}
-    Osc2 {}
-    BassDrum {}
-    NoiseBell {}
-    SuperMod {}
-    LFO {}
-    Mixer {}
-    Filter {}
-    Crusher {}
-    AnalogFilter {}
-    Saturation {}
-  }
 }

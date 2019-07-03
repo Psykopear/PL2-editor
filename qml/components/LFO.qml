@@ -6,9 +6,9 @@ Module {
   title: "LFO"
   backgroundColor: "#A3CEC9"
   ColumnLayout {
-    CheckBox { text: "OSC PWM" }
-    CheckBox { text: "OSC PITCH" }
-    CheckBox { text: "FILTER" }
-    CheckBox { text: "AMP" }
+    Switch { text: "OSC PWM" }
+    Switch { text: "OSC PITCH" }
+    Switch { text: "FILTER" }
+    Switch { text: "AMP" }
   }
 }
