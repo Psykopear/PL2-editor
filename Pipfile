@@ -4,14 +4,10 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pyinstaller = {editable = true,git = "https://github.com/pyinstaller/pyinstaller.git"}
 
 [packages]
-mido = "*"
-python-rtmidi = "*"
-pyside2 = "*"
-python-qt-live-coding = "*"
-pyqt5 = "*"
+mido = "==1.2.9"
+pyside2 = "==5.14.0"
 
 [requires]
 python_version = "3.8"
